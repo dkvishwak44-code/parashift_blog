@@ -1,1 +1,5 @@
 @import "tailwindcss";
+/* App.css or any CSS file */
+body {
+  font-family: 'Barlow', sans-serif;
+}
