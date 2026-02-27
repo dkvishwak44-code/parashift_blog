@@ -10,10 +10,9 @@ const BlogCard = ({item}) => {
 
 
 const handleClick = (slug)=>{
-    console.log(slug);
     
       navigate(`/blog/${slug}`)
-      window.location.reload();
+    //   window.location.reload();
   }
 
 
