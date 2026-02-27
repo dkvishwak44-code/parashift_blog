@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import button_arrow from "../assets/button_arrow.svg";
 import { useNavigate } from "react-router-dom";
 import { FaCalendarAlt } from "react-icons/fa";
@@ -8,6 +8,12 @@ const BlogCard = ({item}) => {
 
     const navigate = useNavigate();
 
+useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'instant' // Use 'smooth' for smooth scrolling
+    });
+  }, []);
 
 const handleClick = (slug)=>{
     

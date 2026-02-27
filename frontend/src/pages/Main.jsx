@@ -8,7 +8,7 @@ const Main = () => {
   return (
       <BrowserRouter>
       <Routes>
-        <Route path="/media" element={<><HeroSection/><BlogList /></>} />
+        <Route path="/media" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogDetails />} />
         <Route path="/" element={<Navigate to="/media" replace />} />
       </Routes>
